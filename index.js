@@ -23,7 +23,9 @@ app.post("/send-user", (req, res) => {
     var user = {
         EmailAddress: req.body.email,
         Name: req.body.name,
-        pleasures: req.body.pleasures
+        CustomFields: [
+            { Key: 'pleasures', Value: req.body.pleasures }
+          ]
     };
     api.subscribers.addSubscriber(listId, user, (err, response) => {
         if (err) {
