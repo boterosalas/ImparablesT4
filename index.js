@@ -22,7 +22,8 @@ var listId = '673859f847e17c44ee82782da616257e' // The ID of the list
 app.post("/send-user", (req, res) => {
     var user = {
         EmailAddress: req.body.email,
-        Name: req.body.name
+        Name: req.body.name,
+        pleasures: req.body.pleasures
     };
     api.subscribers.addSubscriber(listId, user, (err, response) => {
         if (err) {
