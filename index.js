@@ -16,7 +16,7 @@ const port = process.env.PORT || 3000;
 
 var auth = { apiKey: 'Lum/xCtzlsE/TskMv12rBLRN78Lo998VUwEl0nZsKvUv+lF2deMMU7xKeur0XYlMiGElj4KGaw3z1/O8jndJ+Ol3mA9g9+//Adzc5zQJJAwzWSy4lGmqCpfF17zZ5dTKKYJo8C2OEyfqEbZG1Bfqeg==' };
 var api = new createsend(auth);
-var listId = 'd41bdfb6c09b28460bb3b2fd088cbe5e' // The ID of the list
+var listId = '9da3c057141ebc7bef7be774b722c472' // The ID of the list
 let a;
 
 app.post("/", (req, res) => {
