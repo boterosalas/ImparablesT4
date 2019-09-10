@@ -19,7 +19,7 @@ var api = new createsend(auth);
 var listId = 'd41bdfb6c09b28460bb3b2fd088cbe5e' // The ID of the list
 let a;
 
-app.post("/send-user", (req, res) => {
+app.post("/", (req, res) => {
     var user = {
         EmailAddress: req.body.email,
         Name: req.body.name,
